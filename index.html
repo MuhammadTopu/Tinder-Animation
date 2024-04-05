@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .detailcontainer{
+            background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.979));
+        }
+    </style>
+</head>
+<body>
+    <div class="w-full h-screen bg-black ">
+        <div class="imagecontainer w-full h-screen relative overflow-hidden ">
+            <div class="mainCard z-[3] w-[130%] h-[130%] top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2  absolute   ">
+                <img class="w-full h-full object-cover" src="" alt="">
+            </div>
+            <div class="incomingCard z-[2] absolute  w-[130%] h-[130%] top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2">
+                <img  class="w-full h-full object-cover" src="" alt="">
+            </div>
+        </div>
+    <div class="w-full h-screen z-[4] absolute top-0 left-0  flex flex-col justify-between ">
+        <div class="navbar px-5 py-6 flex justify-between items-center text-white ">
+            <div class="profileimg w-[3.2rem] h-[3.2rem] overflow-hidden rounded-full ">
+                <img class="w-full h-full object-cover" src="" alt="img1">
+            </div>
+                <h3 class="capitalize text-xl font-regular tracking-tighter ">They liked you</h3>
+                <div class="flex relative items-center justify-center chaticon w-[3.2rem] h-[3.2rem] rounded-full bg-white/20">
+                    <i class="fa-solid fa-comments"></i>
+                    <div class="flex absolute items-center justify-center font-semibold rounded-full bg-red-800 w-6 h-6 top-0 right-0 -translate-y-[5px] translate-x-[3px] badge">
+                     <h5>6+</h5>
+                    </div>
+                </div>
+        </div>
+        <div class="detailcontainer w-full ">
+            <div class="details w-full px-5 py-6 ">
+              <div class="element location flex gap-4 ">
+                <i class=" w-[2rem] h-[2rem] bg-white flex items-center justify-center rounded-full font-semibold fa-solid fa-arrow-turn-up"></i>
+                <h3 class="text-white ">USA, California</h3>
+              </div>
+              <div class="element name flex text-white gap-4 mt-1">
+               <h1 class="text-6xl tracking-tighter font-semibold">Victoria,</h1>
+               <h1 class="text-6xl tracking-tighter font-semibold opacity-60">20</h1>
+              </div>
+              <div class="element tags flex gap-2 mt-4">
+                <div class="tag flex gap-2 items-center bg-white/30 rounded-full px-3 py-1 text-white tracking-tighter  ">
+                    <i class="fa-solid fa-music text-sm "></i>
+                    <h3 class="text-white text-sm ">Music</h3>
+                </div>
+               
+              </div>
+              <div class="element bio text-white/80 mt-5 ">
+                <h3 class="text-lg">Bio</h3>
+                <p class="text-lg mt-3"></p>
+              </div>
+              <div class="element flex gap-2 items-start mt-5">
+               <button class="deny py-3 rounded-lg w-1/2  bg-white/60 " > 
+                
+                <i class="text-3xl text-black  fa-solid fa-xmark"></i>
+               </button>
+               <button class="accept py-3 rounded-lg w-1/2  bg-[#FC5149]/60">
+                <i class="text-3xl text-white  fa-solid fa-heart"></i>
+               </button>
+              </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js                                                                            "></script>
+</body>
+</html>
